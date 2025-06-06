@@ -10,3 +10,4 @@ for python dependencies we use -> (uv) insted of .venv or conda
     it will automatically create those files (.gitignore , .python-version, main.py, pyproject.toml, readme.md)
 
 # start adding debendencies -> uv add fastapi uvicorn sqlalchemy python-dotenv clerk-backend-api openai
+watermelon
