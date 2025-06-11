@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ClerkProviderWithRoutes } from "./auth/ClerkProviderWithRoutes.jsx"
+import  ClerkProviderWithRoutes  from "./auth/ClerkProviderWithRoutes.jsx"
 import { Route, Routes } from 'react-router-dom'
 import { Layout } from './layout/Layout.jsx'
 import { ChallengeGenerator } from './challenge/ChallengeGenerator.jsx'
