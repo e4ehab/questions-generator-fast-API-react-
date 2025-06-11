@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ClerkProviderWithRoutes } from "./auth/ClerkProviderWithRoutes.jsx"
 import { Route, Routes } from 'react-router-dom'
-import { layout } from './layout/Layout.jsx'
+import { Layout } from './layout/Layout.jsx'
 import { ChallengeGenerator } from './challenge/ChallengeGenerator.jsx'
 import { HistoryPanel } from './history/HistoryPanel.jsx'
 import { AuthenticationPage } from './auth/AuthenticationPage.jsx'
@@ -16,7 +16,7 @@ function App() {
       <Route path="/sign-in/*" element={<AuthenticationPage />} />
       <Route path="/sign-up" element={<AuthenticationPage />} />
 
-      <Route element={<layout />}>
+      <Route element={<Layout />}>
         <Route path="/" element={<ChallengeGenerator />} />
         <Route path="/history" element={<HistoryPanel />} />
       </Route>
