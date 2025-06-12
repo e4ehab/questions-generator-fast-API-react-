@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from clerk_backend_api import Clerk
 import os
 
-clerk_sdk = Clerk(bearer_auth=os.getenv("CLERK_SECRET_KEY"))
+clerk_sdk = Clerk(bearer_auth=os.getenv("CLERK_SECRET_KEY"))#must have .env with the key
 # tell clerk that we are the owners of the application because we have the secret key ,
 # so we can do the tooken operations
 
